@@ -2,6 +2,12 @@
 
 An interactive WebGL moss ball rendered with **125,000 instanced moss strands** on a rolling sphere. Built with [Threlte](https://threlte.xyz) (Svelte + Three.js).
 
+
+
+https://github.com/user-attachments/assets/31d86949-4eca-457e-b7db-4de37fceade8
+
+
+
 ## Features
 
 - **125,000-500,000 instanced moss blades** with per-blade physics
