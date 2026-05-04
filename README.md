@@ -5,14 +5,24 @@
 <a href="https://leduchieu.com"><img src="https://img.shields.io/badge/-Hieu%20Le-grey"></a><a href="https://imoss.bio"><img src="https://img.shields.io/badge/-imoss.bio-green"></a>
 </div>
 
-An interactive WebGL moss ball rendered with **125,000 instanced - 500,000 moss strands** on a rolling sphere. Built with [Threlte](https://threlte.xyz) (Svelte + Three.js).
+> 🌱 **Live demo:** [imoss.bio](https://imoss.bio)
 
 
 
+https://github.com/user-attachments/assets/42fe0a2d-f9b9-4d5a-81ad-4a632b12baf5
 
 
-https://github.com/user-attachments/assets/31d86949-4eca-457e-b7db-4de37fceade8
 
+An interactive WebGL (Three.js) custom shader Marimo moss ball rendered with **125,000 instanced - 500,000 moss strands** on a rolling sphere. Built with [Threlte](https://threlte.xyz) (Svelte + Three.js).
+
+## Run locally
+
+```
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` and click the ball to interact.
 
 
 ## Features
@@ -50,48 +60,6 @@ https://github.com/user-attachments/assets/31d86949-4eca-457e-b7db-4de37fceade8
 ### Controls
 - **lil-gui control panel** — live adjust blade count, strand length, clump strength, and algae color shift
 
-## Demo
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL (usually `http://localhost:5173`) and click the ball to interact with it.
-
-## Usage
-
-The package exports two components:
-
-### `MossBallScene`
-
-A ready-to-use scene wrapper with camera, lighting, and canvas setup.
-
-```svelte
-<script>
-  import MossBallScene from './components/MossBallScene.svelte'
-</script>
-
-<MossBallScene />
-```
-
-### `MossBall`
-
-The core component (use inside your own `<Canvas>`).
-
-```svelte
-<script>
-  import { Canvas, T } from '@threlte/core'
-  import MossBall from './components/MossBall.svelte'
-  import * as THREE from 'three'
-</script>
-
-<Canvas autoRender={false} gl={{ powerPreference: 'high-performance', toneMapping: THREE.AgXToneMapping, outputColorSpace: THREE.SRGBColorSpace, alpha: true }}>
-  <T.PerspectiveCamera makeDefault position={[0, 0, 20]} fov={35} near={0.1} far={100} />
-  <T.AmbientLight intensity={0.0} />
-  <MossBall />
-</Canvas>
-```
 
 ## Files
 
@@ -114,7 +82,9 @@ src/
 
 ## Author
 
-**Hieu Le**
+Created by **Hieu Le**<br>
+<i>Creative Developer & Full-Stack Engineer</i><br>
+[leduchieu.com](https://leduchieu.com) 
 
 ## Attribution
 
